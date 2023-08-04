@@ -1,0 +1,89 @@
+* {
+	font-family: "REM", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 16rem 1fr;
+	min-height: 100vh;
+}
+
+.header-main-container {
+	display: grid;
+	grid-template-rows: 8rem 1fr;
+}
+
+header {
+	grid-row: 1 / 2;
+	grid-column: 2 / -1;
+}
+
+#search {
+	height: 2rem;
+	min-width: 50%;
+	background: #f5f5f5;
+	outline: none;
+	border: none;
+	border-radius: 1.625rem;
+	padding: 0 3.5rem 0 1.5rem;
+	font-size: 1rem;
+}
+
+nav {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	background-color: #38bdf8;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+li {
+	list-style-type: none;
+}
+
+.tile1 {
+	grid-area: tile1;
+}
+
+.tile2 {
+	grid-area: tile2;
+}
+.tile3 {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-area: tile3;
+	gap: 3rem;
+}
+.tile4 {
+	grid-area: tile4;
+}
+.tile5 {
+	grid-area: tile5;
+}
+.tile6 {
+	grid-area: tile6;
+}
+.tile7 {
+	grid-area: tile7;
+}
+
+main {
+	display: grid;
+	grid-row: 2 / -1;
+	grid-column: 2 / -1;
+	gap: 1rem;
+	grid-template-areas:
+		"tile1 tile2 tile3"
+		"tile4 tile5 tile3"
+		"tile6 tile7 tile3";
+}
